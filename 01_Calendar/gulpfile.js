@@ -2,7 +2,6 @@ var gulp = require('gulp');
 
 var connect = require('gulp-connect');
 var uglify = require('gulp-uglifyjs');
-var concat = require('gulp-concat');
 
 var paths = {
   scripts: ['./app.js', './states/**/*.js'],
