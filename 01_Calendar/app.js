@@ -1,6 +1,9 @@
 var app = angular.module('calendar', ['ui.router']);
 
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config([
+  '$stateProvider',
+  '$urlRouterProvider',
+  function($stateProvider, $urlRouterProvider) {
 
   // For any unmatched url
   $urlRouterProvider.otherwise('/calendar');
@@ -16,4 +19,4 @@ app.config(function($stateProvider, $urlRouterProvider) {
         }
       }
     });
-});
+}]);
