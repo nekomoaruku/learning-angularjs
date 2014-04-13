@@ -4,8 +4,8 @@ var connect = require('gulp-connect');
 var uglify = require('gulp-uglifyjs');
 
 var paths = {
-  scripts: ['./app.js', './states/**/*.js'],
-  htmls: ['./index.html', './states/**/*.html']
+  scripts: ['app.js', 'states/**/*.js', 'services/*.js'],
+  htmls: ['index.html', 'states/**/*.html']
 };
 
 gulp.task('connect', function() {
@@ -18,10 +18,10 @@ gulp.task('connect', function() {
 
 gulp.task('script', function() {
   gulp.src(paths.scripts)
-    .pipe(uglify('./script.min.js', {
+    .pipe(uglify('script.min.js', {
       outSourceMap: true
     }))
-    .pipe(gulp.dest('./dist/js'))
+    .pipe(gulp.dest('./dist/js/'))
     .pipe(connect.reload());
 });
 

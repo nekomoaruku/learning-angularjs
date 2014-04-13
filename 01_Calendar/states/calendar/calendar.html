@@ -1,3 +1,60 @@
 <div>
-{{hello}}
+  <p>
+    <button ng-click="goLastMonth()">{{'<'}}</button>
+    <button ng-click="goNextMonth()">{{'>'}}</button>
+    {{year}}年 {{month}}月
+  </p>
 </div>
+<table>
+  <tr>
+    <td ng-repeat="day in daysOfTheWeek">
+      {{day}}
+    </td>
+  </tr>
+  <tr ng-repeat="week in weeks">
+    <td ng-repeat="date in week track by $index">
+      {{date}}
+    </td>
+  </tr>
+</table>
+
+<style>
+
+  html, body, #container {
+    height: 100%;
+  }
+
+  table {
+    width: 91%;
+    height: 84%;
+    border: 1px solid #303030;
+    border-collapse: collapse;
+  }
+
+  tr:first-child {
+    height: 40px;
+    text-align: center;
+  }
+
+  tr:first-child td {
+    vertical-align: middle;
+    font-size: 14px;
+  }
+
+  td {
+    padding: 4px;
+    width: 13%;
+    border: 1px solid #303030;
+    vertical-align: top;
+    font-size: 12px;
+  }
+
+  td:first-child {
+    background: #F9E2E6;
+  }
+
+  td:last-child {
+    background: #DAF1F5;
+  }
+
+</style>
