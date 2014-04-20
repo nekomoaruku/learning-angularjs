@@ -1,0 +1,63 @@
+/*
+ * Navbar
+ */
+.ne-navbar {
+    padding: 12px 16px;
+    border: none;
+    background: #000;
+    border-radius: 0;
+}
+
+.ne-navbar-brand {
+    color: #DDD;
+    text-shadow: none;
+}
+
+.ne-navbar .uk-navbar-nav > li > a {
+    padding: 0px 16px;
+    color: #EEE;
+    margin-right: 15px;
+    text-shadow: none;
+}
+
+.ne-navbar .uk-navbar-nav > li:hover > a {
+    background-color: #2BA3D4;
+    border-radius: 3px;
+    color: #FFF;
+}
+
+/*
+ * Container
+ */
+.ne-container {
+    padding: 32px 24px;
+}
+
+.ne-main {
+    padding-right: 40px;
+    border-right: 1px solid #E5E5E5;
+}
+
+/*
+ * Article
+ */
+.ne-article-date {
+    margin: 16px 0 12px;
+    padding-left: 6px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.ne-article-subtitle {
+    padding-left: 6px;
+    border-left: 3px solid #1FA2D6;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+/*
+ * Form
+ */
+.ne-textarea {
+    width: 100%;
+}

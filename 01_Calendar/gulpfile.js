@@ -21,7 +21,7 @@ gulp.task('script', function() {
     .pipe(uglify('script.min.js', {
       outSourceMap: true
     }))
-    .pipe(gulp.dest('./dist/js/'))
+    .pipe(gulp.dest('dist/js/'))
     .pipe(connect.reload());
 });
 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="modal">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>02_Modal</title>
+  <link rel="stylesheet" href="uikit/dist/css/uikit.css">
+  <link rel="stylesheet" href="uikit/dist/css/uikit.almost-flat.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--navigation-->
+  <nav class="ne-navbar uk-navbar" >
+    <a class="ne-navbar-brand uk-navbar-brand">Progress</a>
+    <div class="uk-navbar-flip">
+      <ul class="uk-navbar-nav">
+        <li><a ui-sref="workspace">Workspace</a></li>
+        <li><a ui-sref="modal">Modal</a></li>
+        <li><a>Log In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--content-->
+  <div class="ne-container" ui-view></div>
+
+  <!--js-->
+  <script src="jquery/jquery.js"></script>
+  <script src="uikit/dist/js/uikit.js"></script>
+  <script src="angular/angular.js"></script>
+  <script src="angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="script.min.js"></script>
+
+</body>
+</html>
